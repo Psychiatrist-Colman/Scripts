@@ -1,8 +1,9 @@
 local library = {}
 
 local UI_options = {
-    ui_size = Vector2.new(0.2, 0.3)
+    ui_size = Vector2.new(0.2, 0.30)
 }
+
 
 function library:CreateMain()
     local UILib = Instance.new("ScreenGui")
@@ -13,7 +14,7 @@ function library:CreateMain()
     local SideBar = Instance.new("Frame")
     local ScrollingBar = Instance.new("ScrollingFrame")
     local UIListLayout_2 = Instance.new("UIListLayout")
-    UILib.Name = game:GetService("HttpService"):GenerateGUID(false)
+    UILib.Name = "UiLib"
     UILib.Parent = game.CoreGui
     script.Parent = UILib
     Frame.Name = "Frame"
