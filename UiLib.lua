@@ -1,7 +1,7 @@
 local library = {}
 
 local UI_options = {
-    ui_size = Vector2.new(0.3, 0.35)
+    ui_size = Vector2.new(0.2, 0.3)
 }
 
 function library:CreateMain()
