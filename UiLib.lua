@@ -1,9 +1,12 @@
 local library = {}
 
 local UI_options = {
-    ui_size = Vector2.new(0.2, 0.30)
+    ui_size = Vector2.new(0.25, 0.3)
 }
 
+if game.CoreGui:FindFirstChild("UiLib") then
+        game.CoreGui:FindFirstChild("UiLib"):Destroy()
+end
 
 function library:CreateMain()
     local UILib = Instance.new("ScreenGui")
