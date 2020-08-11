@@ -1,5 +1,9 @@
 local library = {}
 
+local UI_options = {
+    ui_size = Vector2.new(0.3, 0.35)
+}
+
 function library:CreateMain()
     local UILib = Instance.new("ScreenGui")
     local Frame = Instance.new("ImageLabel")
@@ -11,13 +15,14 @@ function library:CreateMain()
     local UIListLayout_2 = Instance.new("UIListLayout")
     UILib.Name = game:GetService("HttpService"):GenerateGUID(false)
     UILib.Parent = game.CoreGui
+    script.Parent = UILib
     Frame.Name = "Frame"
     Frame.Parent = UILib
     Frame.AnchorPoint = Vector2.new(0.5, 0.5)
     Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Frame.BackgroundTransparency = 1.000
     Frame.Position = UDim2.new(0.530324996, 0, 0.518291414, 0)
-    Frame.Size = UDim2.new(0.315015465, 0, 0.358125925, 0)
+    Frame.Size = UDim2.new(UI_options.ui_size.X, 0, UI_options.ui_size.Y, 0)
     Frame.Image = "rbxassetid://3570695787"
     Frame.ImageColor3 = Color3.fromRGB(95, 95, 96)
     Frame.ScaleType = Enum.ScaleType.Slice
