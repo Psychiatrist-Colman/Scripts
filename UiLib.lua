@@ -99,9 +99,9 @@ function library:CreateMain()
         TextButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
         TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
         TextButton.Size = UDim2.new(1.00999999, 0, 1.00699997, 0)
-        TextButton.Font = Enum.Font.SourceSans
-        TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-        TextButton.TextSize = 14.000
+        TextButton.Font = Enum.Font.SourceSansBold
+        TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextButton.TextSize = 16.000
     end
 
     function secondLibrary:CreateButton(Name, ButtonName)
