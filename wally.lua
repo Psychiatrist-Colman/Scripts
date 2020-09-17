@@ -1002,6 +1002,7 @@ local defaults; do
                     BackgroundTransparency = 1;
                     Active = false;
                 });
+		--Bruh
                 Parent = game:GetService("CoreGui");
             }):FindFirstChild('Container');
         end
